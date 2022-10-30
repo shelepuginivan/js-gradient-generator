@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="public/favicon.png">
+    <link rel="favicon" type="image/png" href="public/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="public/favicon.png">
+    <script src="index.js"></script>
+    <title>Gradient Generator</title>
+</head>
+<body>
+    <div id="gradient-info" class="menu" data-visible="true">
+        <p>Press SPACE to hide menu</p>
+        <h1 id="header">Gradient Generator</h1>
+        <div class="inputs">
+            <input type="text" id="color-count-input" pattern="[0-9]*" placeholder="Number of colors (2)">
+            <button id="gen-gradient-btn" onclick="renderLinearGradient(true)">Generate</button>
+            <p>Or press ENTER</p>
+        </div>
+        <div class="code">
+            <p id="source-code" onclick="copyToClipboard()"></p>
+            <p>Tap to copy</p>
+        </div>
+        <div class="placeholder"></div>
+    </div>
+</body>
+</html>
