@@ -1,7 +1,7 @@
 window.addEventListener('keypress', pressed => {
     switch (pressed.key) {
         case 'Enter':
-            renderLinearGradient(true)
+            renderLinearGradient(true, '')
             break
         case ' ':
             changeMenuVisibility()
