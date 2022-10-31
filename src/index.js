@@ -17,7 +17,7 @@ window.addEventListener('load', () => {
 })
 
 const renderLinearGradient = (generateNew, colorsHash, addHash = true) => {
-    const colors = colorsHash === '' || generateNew ? generateLinearGradient() : colorsHash.split(',')
+    const colors = (colorsHash === '' || generateNew) ? generateLinearGradient() : colorsHash.replace('#', '').split(',')
     const cssValue = `linear-gradient(90deg, ${colors.map(color => `#${color}`).join(', ')})`
 
     const sourceCode = document.getElementById('source-code')
