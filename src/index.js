@@ -13,7 +13,7 @@ window.addEventListener('keypress', pressed => {
 
 window.addEventListener('load', () => {
     const hash = document.location.hash
-    renderLinearGradient(hash !== '', hash)
+    renderLinearGradient(hash === '', hash)
 })
 
 const renderLinearGradient = (generateNew, colorsHash, addHash = true) => {
